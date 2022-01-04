@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <title>LIFF: @UFAMACAO</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.18.0/sdk.js"></script>
+  </head>
+  <body id="body">
+    <div>
+      <button
+        id="Share"
+        onclick="myfunction(1)"
+        type="button"
+        class="btn btn-success"
+      >
+        คลิ๊กที่นี่เพื่อ Test
+      </button>
+    </div>
+
+    <script>
+      main();
+      async function main() {
+        await liff.init({ liffId: '1656779650-DO01aPyY' });
+      }
+    </script>
+
+    <script type="text/javascript">
+      async function myfunction(x) {
+        if (!liff.isInClient()) {
+          if (!liff.isLoggedIn()) {
+            liff.login();
+          }
+        }
+
+        await liff.shareTargetPicker([
+          {
+            type: 'flex',
+            altText: 'ทำไรอยู่คะพี่',
+            contents: {
+              type: 'carousel',
+              contents: [
+                {
+                  //ฟรี
+                  type: 'bubble',
+                  direction: 'ltr',
+                  hero: {
+                    type: 'image',
+                    url: 'https://www.img.in.th/images/a1da535915ddb0e2a45213f4c750eb23.jpg',
+                    size: 'full',
+                    backgroundColor: '#000000',
+                    action: {
+                      type: 'uri',
+                      label: '111',
+                      uri: 'https://bit.ly/3yhQjCI',
+                    },
+                  },
+
+                  footer: {
+                    type: 'box',
+                    layout: 'horizontal',
+                    spacing: 'none',
+                    backgroundColor: '#000000',
+                    contents: [
+                      {
+                        type: 'button',
+                        action: {
+                          type: 'uri',
+                          label: 'รับเครดิต',
+                          uri: 'https://bit.ly/3Jye52R',
+                        },
+                        color: '#000000',
+                        style: 'primary',
+                      },
+                      {
+                        type: 'button',
+                        action: {
+                          type: 'uri',
+                          label: 'แชร์กิจกรรม',
+                          uri: 'https://liff.line.me/1656779650-DO01aPyY',
+                        },
+                        color: '#000000',
+                        style: 'primary',
+                      },
+                    ],
+                  },
+                },
+                {
+                  //สล็อต
+                  type: 'bubble',
+                  hero: {
+                    type: 'image',
+                    url: 'https://www.img.in.th/images/2738981c3afea6bb56cacf37cb1f528c.jpg',
+                    size: 'full',
+                    backgroundColor: '#000000',
+                    aspectMode: 'fit',
+                    action: {
+                      type: 'uri',
+                      label: '111',
+                      uri: 'https://bit.ly/3yhQjCI',
+                    },
+                  },
+                  footer: {
+                    type: 'box',
+                    layout: 'horizontal',
+                    spacing: 'none',
+                    backgroundColor: '#000000',
+                    contents: [
+                      {
+                        type: 'button',
+                        action: {
+                          type: 'uri',
+                          label: 'รับโปรโมชั่น',
+                          uri: 'https://bit.ly/3Jye52R',
+                        },
+                        color: '#000000',
+                        style: 'primary',
+                      },
+                      {
+                        type: 'button',
+                        action: {
+                          type: 'uri',
+                          label: 'แชร์กิจกรรม',
+                          uri: 'https://liff.line.me/1656697705-2akLrXe4',
+                        },
+                        color: '#000000',
+                        style: 'primary',
+                      },
+                    ],
+                  },
+                },
+                {
+                  //คาสิโน
+                  type: 'bubble',
+                  hero: {
+                    type: 'image',
+                    url: 'https://www.img.in.th/images/bab06e7791bbfe6bfe80fe39c4e09372.jpg',
+                    size: 'full',
+                    backgroundColor: '#000000',
+                    aspectMode: 'fit',
+                    action: {
+                      type: 'uri',
+                      label: '111',
+                      uri: 'https://bit.ly/3yhQjCI',
+                    },
+                  },
+                  footer: {
+                    type: 'box',
+                    layout: 'horizontal',
+                    spacing: 'none',
+                    backgroundColor: '#000000',
+                    contents: [
+                      {
+                        type: 'button',
+                        action: {
+                          type: 'uri',
+                          label: 'รับโปรโมชั่น',
+                          uri: 'https://bit.ly/3Jye52R',
+                        },
+                        color: '#000000',
+                        style: 'primary',
+                      },
+                      {
+                        type: 'button',
+                        action: {
+                          type: 'uri',
+                          label: 'แชร์กิจกรรม',
+                          uri: 'https://liff.line.me/1656697705-2akLrXe4',
+                        },
+                        color: '#000000',
+                        style: 'primary',
+                      },
+                    ],
+                  },
+                },
+                {
+                  //บอล
+                  type: 'bubble',
+                  hero: {
+                    type: 'image',
+                    url: 'https://www.img.in.th/images/7bda78622e85e89c72b5d10ed54b556a.jpg',
+                    size: 'full',
+                    backgroundColor: '#000000',
+                    aspectMode: 'fit',
+                    action: {
+                      type: 'uri',
+                      label: '111',
+                      uri: 'https://bit.ly/3yhQjCI',
+                    },
+                  },
+                  footer: {
+                    type: 'box',
+                    layout: 'horizontal',
+                    spacing: 'none',
+                    backgroundColor: '#000000',
+                    contents: [
+                      {
+                        type: 'button',
+                        action: {
+                          type: 'uri',
+                          label: 'รับโปรโมชั่น',
+                          uri: 'https://bit.ly/3Jye52R',
+                        },
+                        color: '#000000',
+                        style: 'primary',
+                      },
+                      {
+                        type: 'button',
+                        action: {
+                          type: 'uri',
+                          label: 'แชร์กิจกรรม',
+                          uri: 'https://liff.line.me/1656697705-2akLrXe4',
+                        },
+                        color: '#000000',
+                        style: 'primary',
+                      },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        ]);
+        liff.closeWindows();
+      }
+    </script>
+  </body>
+</html>
